@@ -215,6 +215,19 @@ ol {
   color: var(--accent-color);
 }
 
+.index::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--accent-color);
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
 /* ============HERO========== */
 
 .hero {
@@ -499,7 +512,7 @@ ol {
   fill: var(--social-link-color);
   border: solid 1px var(--social-link-color);
 
-  transition-property: fill, border;
+  transition-property: fill, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -507,7 +520,7 @@ ol {
 .client-list-link:hover,
 .client-list-link:focus {
   fill: var(--accent-color);
-  border: solid 1px var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .client-title {
@@ -523,6 +536,19 @@ ol {
 
 .portfolio {
   color: var(--accent-color);
+}
+
+.portfolio::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--accent-color);
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  opacity: 1;
 }
 
 /* =================MAIN-PORTFOLIO================= */
@@ -634,7 +660,7 @@ ol {
   left: 0;
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
-  overflow: scroll;
+  /* overflow: scroll; */
 
   transform: translateY(101%);
   transition-property: transform;
@@ -737,7 +763,7 @@ ol {
   border-radius: 50%;
   fill: var(--header-background-color);
   background-color: rgba(255, 255, 255, 0.1);
-  transition-property: fill, background-color;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
